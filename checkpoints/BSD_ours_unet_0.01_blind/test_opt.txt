@@ -1,0 +1,43 @@
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 8                             
+          checkpoints_dir: ./checkpoints                 
+                crop_size: 256                           
+                 dataroot: ./testdata/Set12              	[default: None]
+             dataset_mode: aligned                       
+                direction: BtoA                          	[default: AtoB]
+          display_winsize: 256                           
+                    epoch: best                          	[default: latest]
+                     eval: False                         
+                  gpu_ids: 0                             
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 1                             
+                  isTrain: False                         	[default: None]
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+         max_dataset_size: inf                           
+                    model: Poisson_blind                 	[default: test]
+               n_layers_D: 3                             
+                     name: BSD_ours_unet_0.01_blind      	[default: experiment_name]
+                      ndf: 64                            
+                     netD: pixel                         
+                     netG: dncnn                         
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: instance                      
+                 num_test: 10000                         
+              num_threads: 4                             
+                output_nc: 1                             
+                parameter: 50                            
+                    phase: test                          
+               preprocess: crop                          
+                 pretrain: False                         
+            pretrain_name: CBSD_ours_unet_25             
+              results_dir: ./results/                    	[default: your_path]
+              scale_param: 0.01                          	[default: 50]
+           serial_batches: False                         
+                   suffix:                               
+                  verbose: False                         
+----------------- End -------------------
